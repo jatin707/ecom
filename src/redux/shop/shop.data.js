@@ -1,246 +1,241 @@
 const SHOP_DATA = {
-  hats: {
+  staples: {
     id: 1,
-    title: 'Hats',
-    routeName: 'hats',
+    title: 'Staples',
+    routeName: 'staples',
     items: [
       {
         id: 1,
-        name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-        price: 25
+        name: 'Asparagus',
+        imageUrl: 'https://i.ibb.co/5cgJXkv/asparagus.jpg',
+        price: 152
       },
       {
         id: 2,
-        name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-        price: 18
+        name: 'Avocado',
+        imageUrl: 'https://i.ibb.co/2MLJ5cj/avocado.jpg',
+        price: 181
       },
       {
         id: 3,
-        name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-        price: 35
+        name: 'Olives',
+        imageUrl: 'https://i.ibb.co/bJRXrPs/olives.jpg',
+        price: 153
       },
       {
         id: 4,
-        name: 'Grey Brim',
-        imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-        price: 25
+        name: 'Lettuce',
+        imageUrl: 'https://i.ibb.co/xHjh7C5/lettuce.jpg',
+        price: 125
       },
       {
         id: 5,
-        name: 'Green Beanie',
-        imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-        price: 18
+        name: 'Berries',
+        imageUrl: 'https://i.ibb.co/1MCVYkP/berries.jpg',
+        price: 218
       },
       {
         id: 6,
-        name: 'Palm Tree Cap',
-        imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-        price: 14
+        name: 'Pepper',
+        imageUrl: 'https://i.ibb.co/fv3DBYh/pepper.jpg',
+        price: 214
       },
       {
         id: 7,
-        name: 'Red Beanie',
-        imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-        price: 18
+        name: 'Blackberry',
+        imageUrl: 'https://i.ibb.co/rtZDpK9/blackberries.jpg',
+        price: 118
       },
       {
         id: 8,
-        name: 'Wolf Cap',
-        imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-        price: 14
-      },
-      {
-        id: 9,
-        name: 'Blue Snapback',
-        imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-        price: 16
+        name: 'Eggs',
+        imageUrl: 'https://i.ibb.co/6r6dTzZ/eggs.jpg',
+        price: 84
       }
+      
     ]
   },
-  sneakers: {
+  nutsnseeds: {
     id: 2,
-    title: 'Sneakers',
-    routeName: 'sneakers',
+    title: 'nuts & seeds',
+    routeName: 'nutsnseeds',
     items: [
       {
         id: 10,
-        name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
+        name: 'Almonds',
+        imageUrl: 'https://i.ibb.co/GPBXYRf/almonds.jpg',
         price: 220
       },
       {
         id: 11,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
+        name: 'Pecan',
+        imageUrl: 'https://i.ibb.co/MNVPcf9/pecan.jpg',
         price: 280
       },
       {
         id: 12,
-        name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
+        name: 'Pistachios',
+        imageUrl: 'https://i.ibb.co/J3cpM10/pistachios.jpg',
         price: 110
       },
       {
         id: 13,
-        name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
+        name: 'Cashews',
+        imageUrl: 'https://i.ibb.co/HHRYGrY/cashews.jpg',
         price: 160
       },
       {
         id: 14,
-        name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
+        name: 'Walnut',
+        imageUrl: 'https://i.ibb.co/hMLtYBM/walnut.jpg',
         price: 160
       },
       {
         id: 15,
-        name: 'Nike Brown High Tops',
-        imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
+        name: 'Chia Seeds',
+        imageUrl: 'https://i.ibb.co/1vYYx62/chiaseeds.jpg',
         price: 160
       },
       {
         id: 16,
-        name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
+        name: 'Pumpkin Seeds',
+        imageUrl: 'https://i.ibb.co/L55mkGt/pumpkinseeds.jpg',
         price: 190
       },
       {
         id: 17,
-        name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
+        name: 'Sesame Seeds',
+        imageUrl: 'https://i.ibb.co/4Fc6tNs/sesameseeds.jpg',
         price: 200
       }
     ]
   },
-  jackets: {
+  bakery: {
     id: 3,
-    title: 'Jackets',
-    routeName: 'jackets',
+    title: 'Bakery',
+    routeName: 'bakery',
     items: [
       {
         id: 18,
-        name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
+        name: 'Buns',
+        imageUrl: 'https://i.ibb.co/G3qSqtf/buns.jpg',
         price: 125
       },
       {
         id: 19,
-        name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
+        name: 'Cheese',
+        imageUrl: 'https://i.ibb.co/d0bq01P/cheese.jpg',
         price: 90
       },
       {
         id: 20,
-        name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
+        name: 'Coffee Beans',
+        imageUrl: 'https://i.ibb.co/wSCqFdZ/coffee.jpg',
         price: 90
       },
       {
         id: 21,
-        name: 'Brown Shearling',
-        imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+        name: 'Cookies',
+        imageUrl: 'https://i.ibb.co/HNm5jSd/cookies.jpg',
         price: 165
       },
       {
         id: 22,
-        name: 'Tan Trench',
-        imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
+        name: 'Chocolate',
+        imageUrl: 'https://i.ibb.co/6BxZDfr/chocolateb.jpg',
         price: 185
       }
     ]
   },
-  womens: {
+  vegetarian: {
     id: 4,
-    title: 'Womens',
-    routeName: 'womens',
+    title: 'Vegetarian',
+    routeName: 'vegetarian',
     items: [
       {
         id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-        price: 25
+        name: 'Keto Toast',
+        imageUrl: 'https://i.ibb.co/ZLDsfY2/ketotoast.jpg',
+        price: 55
       },
       {
         id: 24,
-        name: 'Floral Blouse',
-        imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-        price: 20
+        name: 'Keto Salad',
+        imageUrl: 'https://i.ibb.co/4dXQgb6/ketosalad.jpg',
+        price: 200
       },
       {
         id: 25,
-        name: 'Floral Dress',
-        imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
+        name: 'Keto Wrap',
+        imageUrl: 'https://i.ibb.co/ys67yQZ/ketowrap.jpg',
         price: 80
       },
       {
         id: 26,
-        name: 'Red Dots Dress',
-        imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
+        name: 'Keto Noodles',
+        imageUrl: 'https://i.ibb.co/QN8NYgz/ketonoodles.jpg',
         price: 80
       },
       {
         id: 27,
-        name: 'Striped Sweater',
-        imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-        price: 45
+        name: 'Keto Biryani',
+        imageUrl: 'https://i.ibb.co/dJDb3m3/ketobiryani.jpg',
+        price: 245
       },
       {
         id: 28,
-        name: 'Yellow Track Suit',
-        imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
+        name: 'Keto Dosa',
+        imageUrl: 'https://i.ibb.co/HDK6kcx/ketodosa.jpg',
         price: 135
       },
       {
         id: 29,
-        name: 'White Blouse',
-        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-        price: 20
+        name: 'Keto Thali',
+        imageUrl: 'https://i.ibb.co/tcqGhcs/ketothali.jpg',
+        price: 520
       }
     ]
   },
-  mens: {
+  nonvegetarian: {
     id: 5,
-    title: 'Mens',
-    routeName: 'mens',
+    title: 'Non vegetarian',
+    routeName: 'nonvegetarian',
     items: [
       {
         id: 30,
-        name: 'Camo Down Vest',
-        imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
+        name: 'Fish Salad',
+        imageUrl: 'https://i.ibb.co/BwwKz7m/fishsalad.jpg',
         price: 325
       },
       {
         id: 31,
-        name: 'Floral T-shirt',
-        imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-        price: 20
+        name: 'Egg Salad',
+        imageUrl: 'https://i.ibb.co/CJ32rZg/eggsalad.jpg',
+        price: 220
       },
       {
         id: 32,
-        name: 'Black & White Longsleeve',
-        imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-        price: 25
+        name: 'Seafood Salad',
+        imageUrl: 'https://i.ibb.co/z4FcFjb/seafoodsalad.jpg',
+        price: 225
       },
       {
         id: 33,
-        name: 'Pink T-shirt',
-        imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-        price: 25
+        name: 'Grassfed Meat',
+        imageUrl: 'https://i.ibb.co/nnS13BM/grassfedmeat.jpg',
+        price: 225
       },
       {
         id: 34,
-        name: 'Jean Long Sleeve',
-        imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-        price: 40
+        name: 'Biryani',
+        imageUrl: 'https://i.ibb.co/8jbrKxs/biryani.jpg',
+        price: 240
       },
       {
         id: 35,
-        name: 'Burgundy T-shirt',
-        imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-        price: 25
+        name: 'Non Veg Thali',
+        imageUrl: 'https://i.ibb.co/5BvWBFm/nonvegthali.jpg',
+        price: 525
       }
     ]
   }

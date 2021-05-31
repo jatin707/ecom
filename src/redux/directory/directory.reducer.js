@@ -1,36 +1,36 @@
 const INITIAL_STATE = {
   sections: [
     {
-      title: 'hats',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+      title: 'staples',
+      imageUrl: 'https://i.ibb.co/RC6ZcMM/staples.jpg',
       id: 1,
-      linkUrl: 'shop/hats'
+      linkUrl: 'shop/staples'
     },
     {
-      title: 'jackets',
-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+      title: 'bakery',
+      imageUrl: 'https://i.ibb.co/zGHRgYL/bakery.jpg',
       id: 2,
-      linkUrl: 'shop/jackets'
+      linkUrl: 'shop/bakery'
     },
     {
-      title: 'sneakers',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+      title: 'nuts & seeds',
+      imageUrl: 'https://i.ibb.co/GTj1xTk/nuts-seeds.jpg',
       id: 3,
-      linkUrl: 'shop/sneakers'
+      linkUrl: 'shop/nutsnseeds'
     },
     {
-      title: 'womens',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+      title: 'vegetarian',
+      imageUrl: 'https://i.ibb.co/106L6nV/veg.jpg',
       size: 'large',
       id: 4,
-      linkUrl: 'shop/womens'
+      linkUrl: 'shop/vegetarian'
     },
     {
-      title: 'mens',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+      title: 'nonvegetarian',
+      imageUrl: 'https://i.ibb.co/sR5j1Xm/nonveg.jpg',
       size: 'large',
       id: 5,
-      linkUrl: 'shop/mens'
+      linkUrl: 'shop/nonvegetarian'
     }
   ]
 };
