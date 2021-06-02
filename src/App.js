@@ -11,24 +11,27 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up
 import CheckoutPage from './pages/checkout/checkout.component';
 
 import Header from './components/header/header.component';
-import { auth, createUserProfileDocument }  from './firebase/firebase.utils';
+import { fAuth, createUserProfileDocument }  from './firebase/firebase.utils';
 
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
 
+
+
+
 class App extends React.Component {
   
 
-  unsubscribeFromAuth = null;
+  unsubscribeFromauth = null;
 
   componentDidMount(){
 
     const { setCurrentUser } = this.props;
 
-    this.unsubscribeFromAuth = auth.onAuthStateChanged( async userAuth => {
-     if (userAuth) {
-       const userRef =  await createUserProfileDocument(userAuth);
+    this.unsubscribeFromauth = fAuth.onAuthStateChanged( async userauth => {
+     if (userauth) {
+       const userRef =  await createUserProfileDocument(userauth);
 
        userRef.onSnapshot(snapShot=> {
         setCurrentUser({
@@ -37,7 +40,7 @@ class App extends React.Component {
          });
        });
      } else {
-       this.setState({ currentUser: userAuth});
+       this.setState({ currentUser: userauth});
      }
 
 
@@ -45,7 +48,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount(){
-    this.unsubscribeFromAuth();
+    this.unsubscribeFromauth();
   }
   
   render(){
@@ -73,6 +76,9 @@ class App extends React.Component {
     );
   }
 }
+
+
+
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
