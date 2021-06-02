@@ -9,6 +9,10 @@
   margin: 0 7.5px 15px;
   overflow: hidden;
 
+  @media screen and (max-width:800px) {
+    height: 200px;
+  }
+
   &:hover {
     cursor: pointer;
   
@@ -26,6 +30,10 @@
 
   &.large {
     height:380px;
+
+    @media screen and (max-width:800px) {
+      height: 200px;
+    }
   }
 
   &:first-child {
@@ -55,16 +63,34 @@
     opacity: 0.7 ;
     position : absolute;
 
+    @media screen and (max-width:800px) {
+      height: 45px;
+      padding: 0 5px;
+    }
+
+    
+
     .title {
       font-weight: bold;
       margin-bottom: 6px;
       font-size: 22px;
       color: #4a4a4a;
+
+      @media screen and (max-width:800px) {
+        font-size: 15px;
+        margin-bottom: 0;
+      }
     }
 
     .subtitle {
       font-weight: lighter;
       font-size: 16px;
+      
+      @media screen and (max-width:800px) {
+        font-size: 10px;
+      }
     }
   }
+
+  
 }

@@ -3,6 +3,14 @@
   display: flex;
   flex-direction : column;
 
+  @media screen and (max-width:800px){
+    
+    width: 90%;
+    
+  
+    
+  } 
+
 
 
   .title{
@@ -12,5 +20,19 @@
   .buttons {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width:800px){
+    
+      display:grid;
+      grid-template-rows: 1fr 1fr;
+      row-gap:10px;
+      align-items: center;
+      
+      
+    
+      
+    } 
+
   }
+
 }

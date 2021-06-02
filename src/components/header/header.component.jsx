@@ -11,7 +11,7 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 
 
-import { ReactComponent as Logo } from '../../assets/crown.svg'; 
+import logo from '../../assets/logo.png'; 
 
 import  './header.styles.scss';
 
@@ -22,7 +22,8 @@ const Header = ({ currentUser, hidden  }) => (
   
   <div className='header'>
     <Link className='logo-container' to='/'>
-      <Logo className='logo' />
+    
+        <img className="img" src={logo} alt="Logo"  />
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
@@ -34,8 +35,7 @@ const Header = ({ currentUser, hidden  }) => (
       <div>
       {currentUser ? (
         <div className='option' onClick={() => fAuth.signOut().then(function() {
-          // Redirect to google sign out.
-          // window.location.assign('https://accounts.google.com/logout');
+        
           window.location.href = '/';
         })}
       >
