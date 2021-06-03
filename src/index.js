@@ -11,7 +11,7 @@ import {store, persistor} from './redux/store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 
-import * as serviceworker from './serviceWorker';
+import * as serviceworker from '../src/serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
