@@ -11,6 +11,8 @@ import {store, persistor} from './redux/store';
 import { Provider } from 'react-redux';
 import reportWebVitals from './reportWebVitals';
 
+import * as serviceworker from './serviceWorker';
+
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
@@ -25,6 +27,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+serviceworker.register();
 
 
 
