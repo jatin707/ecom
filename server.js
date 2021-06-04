@@ -33,12 +33,7 @@ app.post('/payment', (req, res) => {
     currency: 'inr'
   };
 
-
-  stripe.paymentIntents.create({
-    payment_method_types: ['card']
-  });
-
-
+  
   stripe.charges.create(body, (stripeErr, stripeRes) => {
     if (stripeErr) {
       res.status(500).send({ error: stripeErr });
